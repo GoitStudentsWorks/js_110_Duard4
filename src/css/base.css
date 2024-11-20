@@ -16,6 +16,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --white: #f0f0f0;
+  --black: #292929;
+  --light-grey: #e4e5e6;
+  --hover-grey: #bbbbbb;
+  --accet-green: #00b068;
+  --hover-green: #009156;
+  --light-accet: #bcdfd1;
+  --error: #e74a3b;
 }
 
 body {
