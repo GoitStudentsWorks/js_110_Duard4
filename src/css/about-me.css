@@ -1,0 +1,213 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me-container {
+    padding: 0 20px;
+    margin: auto;
+    width: 320px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+p {
+    
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.img-about-me {
+    padding-bottom: 40px;
+    border-radius: 16px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 123%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Impact', sans-serif;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.text-black {
+    color: #292929;
+}
+
+.text-green {
+    color: #00B068;
+}
+
+.text-one {
+    padding-bottom: 24px;
+}
+
+.bio-text-container {
+    padding-bottom: 40px;
+}
+
+.sec-edu {
+    padding-bottom: 40px;
+}
+
+/* tablet screen 768px */
+
+@media screen and (min-width: 768px) {
+    .about-me-container {
+        padding: 0 32px;
+        margin: auto;
+        width: 704px;
+    }
+
+    .about-me {
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 133%;
+        letter-spacing: 0.01em;
+    }
+
+    .bio-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .bio-text-container {
+        width: 336px;
+        height: 680px;
+        padding: 0;
+    }
+
+    .img-about-me {
+        width: 336px;
+        height: 392px;
+        border-radius: 16px;
+        padding: 368px 32px 60px 0;
+    }
+
+    
+   .background-img {
+       width: 336px;
+       height: 252px;
+       background-image: url('../img/decorbg2.png');
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+    }
+
+    .text-two {
+        padding-bottom: 12px;
+    }
+    .sec-edu{
+        width: 336px;
+        height: 280px;
+        padding: 0 32px 0 0;
+    }
+    .sec-role {
+        width: 336px;
+        height: 280px;
+    }
+
+    .bio-list{
+       display: flex;
+       width: 704px ;
+       height: 280px ;
+    }
+}
+
+/* Desktop screen 1280px */
+@media screen and (min-width: 1280px){
+    .about-me-container {
+        padding: 0 32px;
+        margin: auto;
+        width: 1216px;
+    }
+    .img-about-me {
+        width: 384px;
+        height: 448px;
+        padding: 232px 136px 80px 208px;
+    }
+    
+    .bio-text-container {
+        width: 488px;
+        height: 488px;
+        padding: 0;
+    }
+
+    .text-two {
+        padding-bottom: 40px;
+    }
+    
+    .background-img{
+        width: 384px;
+        height: 288px;
+        margin-left: 104px;
+    }
+
+    .bio-list {
+        padding-left: 208px;
+        width: 904px;
+        height: 280px;
+    }
+
+    .sec-edu {
+        width: 384px;
+        height: 280px;
+        padding: 0 136px 0 0;
+    }
+
+    .sec-role {
+        width: 384px;
+        height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
