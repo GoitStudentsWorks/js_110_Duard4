@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+body {
+    font-family: 'Poppins', sans-serif;
+}
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
 
 .about-me-container {
     padding: 0 20px;
@@ -12,11 +18,19 @@ h3 {
     line-height: 125%;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+<<<<<<< HEAD
     margin-bottom: 32px;
 }
 
 p {
 
+=======
+    padding-bottom: 32px;
+}
+
+p {
+    
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -32,6 +46,7 @@ ul {
     gap: 12px;
 }
 
+<<<<<<< HEAD
 .about-me-list li {
     position: relative;
     display: flex;
@@ -62,6 +77,22 @@ ul {
     height: auto;
     border-radius: 16px;
     margin: 0 0 40px 0;
+=======
+ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.img-about-me {
+    padding-bottom: 40px;
+    border-radius: 16px;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
 }
 
 .about-me {
@@ -80,6 +111,7 @@ ul {
 }
 
 .text-black {
+<<<<<<< HEAD
     color: #292929
 }
 
@@ -93,6 +125,21 @@ ul {
 
 .bio-text-container {
     margin-bottom: 40px;
+=======
+    color: #292929;
+}
+
+.text-green {
+    color: #00B068;
+}
+
+.text-one {
+    padding-bottom: 24px;
+}
+
+.bio-text-container {
+    padding-bottom: 40px;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
 }
 
 .sec-edu {
@@ -103,10 +150,16 @@ ul {
 
 @media screen and (min-width: 768px) {
     .about-me-container {
+<<<<<<< HEAD
         padding: 0px 32px;
         width: 768px;
         height: 100%;
         position: relative;
+=======
+        padding: 0 32px;
+        margin: auto;
+        width: 704px;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     }
 
     .about-me {
@@ -123,6 +176,7 @@ ul {
 
     .bio-container {
         display: flex;
+<<<<<<< HEAD
         
     
     }
@@ -157,11 +211,39 @@ ul {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+=======
+        flex-wrap: wrap;
+    }
+
+    
+    .bio-text-container {
+        width: 336px;
+        height: 680px;
+        padding: 0;
+    }
+
+    .img-about-me {
+        width: 336px;
+        height: 392px;
+        border-radius: 16px;
+        padding: 368px 32px 60px 0;
+    }
+
+    
+   .background-img {
+       width: 336px;
+       height: 252px;
+       background-image: url('../img/decorbg2.png');
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     }
 
     .text-two {
         padding-bottom: 12px;
     }
+<<<<<<< HEAD
 
     .sec-edu {
         width: 336px;
@@ -176,10 +258,27 @@ ul {
         display: flex;
         width: 704px;
         height: 280px;
+=======
+    .sec-edu{
+        width: 336px;
+        height: 280px;
+        padding: 0 32px 0 0;
+    }
+    .sec-role {
+        width: 336px;
+        height: 280px;
+    }
+
+    .bio-list{
+       display: flex;
+       width: 704px ;
+       height: 280px ;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     }
 }
 
 /* Desktop screen 1280px */
+<<<<<<< HEAD
 @media screen and (min-width: 1280px) {
     .about-me-container {
         padding: 0px 32px;
@@ -202,11 +301,30 @@ ul {
         height: 488px;
         margin: 0;
         
+=======
+@media screen and (min-width: 1280px){
+    .about-me-container {
+        padding: 0 32px;
+        margin: auto;
+        width: 1216px;
+    }
+    .img-about-me {
+        width: 384px;
+        height: 448px;
+        padding: 232px 136px 80px 208px;
+    }
+    
+    .bio-text-container {
+        width: 488px;
+        height: 488px;
+        padding: 0;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     }
 
     .text-two {
         padding-bottom: 40px;
     }
+<<<<<<< HEAD
 
     .background-img {
         top: 692px;
@@ -216,6 +334,13 @@ ul {
         width: 384px;
         height: 288px;
        
+=======
+    
+    .background-img{
+        width: 384px;
+        height: 288px;
+        margin-left: 104px;
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
     }
 
     .bio-list {
@@ -225,6 +350,7 @@ ul {
     }
 
     .sec-edu {
+<<<<<<< HEAD
          width: 384px;
          margin: 0 136px 0 0;
         
@@ -232,3 +358,25 @@ ul {
 
     
 }
+=======
+        width: 384px;
+        height: 280px;
+        padding: 0 136px 0 0;
+    }
+
+    .sec-role {
+        width: 384px;
+        height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+>>>>>>> baaa1219f70bf114c5ee242f8816898e7cab0004
