@@ -35,7 +35,6 @@ ul {
     position: relative;
     display: flex;
     align-items: flex-start;
-    gap: 8px;
     padding-left: 12px;
 }
 
@@ -168,16 +167,11 @@ ul {
         padding: 0
     }
 
-    .sec-role{
-        padding-left: 32px;
-    }
-
-    
-
     .bio-list {
         display: flex;
         width: 704px;
         height: 280px;
+        gap: 32px;
     }
 
     ul{
@@ -189,7 +183,6 @@ ul {
 @media screen and (min-width: 1280px) {
     .about-me-container {
         min-width: 1280px;
-        /* height: 1244px; */
         margin: auto;
         
     }
@@ -224,8 +217,9 @@ ul {
     }
 
     .bio-list {
-        padding-left: 208px;
-        min-width: 904px;
+        margin: 0 136px 0 208px;
+        width: 904px;
+        gap: 136px;
     }
 
     .sec-edu {
@@ -237,7 +231,7 @@ ul {
     .sec-role {
         width: 384px;
         height: 184px;
-        padding-left:  136px ;
+        
         
     }
 
