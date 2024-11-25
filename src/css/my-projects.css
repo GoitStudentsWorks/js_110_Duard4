@@ -7,7 +7,7 @@
 .projects-title {
   color: var(--black);
   text-align: center;
-  font-family: "Impact";
+  font-family: 'Impact';
   font-weight: 400;
   font-size: 3.25rem;
   line-height: 1.23;
@@ -92,7 +92,8 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-list .visit-btn:hover, .project-list .visit-btn:focus {
+.project-list .visit-btn:hover,
+.project-list .visit-btn:focus {
   background-color: var(--hover-grey);
 }
 @media screen and (min-width: 768px) {
@@ -127,8 +128,6 @@
   }
 }
 
-
-
 .load-more {
   display: block;
   padding: 12px 24px;
@@ -154,7 +153,8 @@
   bottom: 12px;
   left: 15%;
 }
-.load-more:hover, .load-more:focus {
+.load-more:hover,
+.load-more:focus {
   color: var(--accet-green);
 }
 @media screen and (min-width: 768px) {

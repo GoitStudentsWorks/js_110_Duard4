@@ -13,12 +13,10 @@ const emailTick = document.querySelector('.form-email-tick');
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 const emailRegex = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-
 async function pushRequest(data) {
   try {
     const response = await axios.post(BASE_URL, data);
     if (response.status === 201) {
-
       const modalTitle = modal.element().querySelector('.form-modal-title');
       const modalMessage = modal.element().querySelector('.form-modal-message');
       modalTitle.textContent = response.data.title;
@@ -33,7 +31,8 @@ async function pushRequest(data) {
       // Server responded with a status outside the 2xx range
       iziToast.error({
         title: 'Server Error',
-        message: error.response.data.message || 'Something went wrong on the server.',
+        message:
+          error.response.data.message || 'Something went wrong on the server.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -41,7 +40,8 @@ async function pushRequest(data) {
       // Request was made but no response was received
       iziToast.error({
         title: 'Network Error',
-        message: 'Unable to connect to the server. Please check your internet connection.',
+        message:
+          'Unable to connect to the server. Please check your internet connection.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -56,8 +56,8 @@ async function pushRequest(data) {
   }
 }
 
-
-const modal = basicLightbox.create(`
+const modal = basicLightbox.create(
+  `
     <div class="form-modal-wrapper">
       <div class="form-modal">
         <div class="form-modal-icon-close-wrapper">
@@ -71,20 +71,23 @@ const modal = basicLightbox.create(`
         </div>
       </div>
     </div>
-`, { closable: false });
-
+`,
+  { closable: false }
+);
 
 emailInput.addEventListener('input', () => {
   if (!emailRegex.test(emailInput.value)) {
     errorMessage.classList.remove('visually-hidden');
     emailTick.classList.add('visually-hidden');
+    emailInput.classList.add('error-color');
   } else {
     errorMessage.classList.add('visually-hidden');
+    emailInput.classList.remove('error-color');
     emailTick.classList.remove('visually-hidden');
   }
 });
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', e => {
   e.preventDefault();
 
   if (!form.elements['contact-email'].value) {
@@ -99,8 +102,11 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-modal.element().querySelector('.form-modal-icon-close').addEventListener('click', (e) => {
-  e.preventDefault();
+modal
+  .element()
+  .querySelector('.form-modal-icon-close')
+  .addEventListener('click', e => {
+    e.preventDefault();
 
-  modal.close();
-});
+    modal.close();
+  });
