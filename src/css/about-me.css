@@ -151,7 +151,7 @@ ul {
         position: absolute;
         width: 336px;
         height: 252px;
-        background-image: url('../img/about-me-img/bg-about-me.png');
+        background-image: url('/img/about-me-img/bg-about-me.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
