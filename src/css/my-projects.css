@@ -120,6 +120,8 @@
   }
   .project-list .visit-btn {
     display: inline-flex;
+    fill: none;
+    stroke: var(--accet-green);
   }
 }
 @media screen and (min-width: 1280px) {

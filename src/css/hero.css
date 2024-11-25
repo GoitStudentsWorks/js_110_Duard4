@@ -38,6 +38,8 @@
   min-width: 28px;
   opacity: 1;
   transition: opacity 0.8s ease;
+  fill: none;
+  stroke: var(--accet-green);
 }
 
 .hero-link {
