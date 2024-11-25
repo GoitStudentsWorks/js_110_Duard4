@@ -56,13 +56,14 @@
         flex-direction: row;
         padding: 40px 32px 24px 32px;
         min-width: 768px;
+        min-height: 216px;
+        gap: 40px;
     }
 
     .footer-logo-social {
         display: flex;
         flex-direction: column;
         height: 88px;
-        margin-bottom: 40px;
     }
 
     .footer-socials {
