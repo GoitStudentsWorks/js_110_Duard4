@@ -22,8 +22,18 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 
-
-
-
-
-
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (min-width: 768px) {
+  main {
+    gap: 124px;
+  }
+}
+@media (min-width: 1280px) {
+  main {
+    gap: 164px;
+  }
+}

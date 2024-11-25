@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url(../img/bg-img-mob.png), url(../img/bg-img-mob2.png);
+  background-image: url(/img/bg-img-mob.png), url(/img/bg-img-mob2.png);
   background-repeat: no-repeat;
   background-size: 351px 264px, 170px 130px;
   background-position: right 10px, left 150px top 350px;
@@ -66,7 +66,7 @@
   pointer-events: none;
 }
 
-.order-link:hover .hero-link{
+.order-link:hover .hero-link {
   color: var(--white);
 }
 .order-link:hover .hero-link::after {
@@ -109,7 +109,7 @@
   padding-bottom: 32px;
 }
 
-.soc-a:hover{
+.soc-a:hover {
   color: var(--accet-green);
 }
 
@@ -142,14 +142,12 @@
     min-width: 704px;
   }
 
-  
-
   .hero-link {
     font-size: 1.25rem;
     line-height: 1.6;
   }
 
-  .hero-link::after{
+  .hero-link::after {
     width: 261px;
   }
 
