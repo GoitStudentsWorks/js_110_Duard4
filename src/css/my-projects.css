@@ -1,161 +1,175 @@
-
-body {
-  
-  font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #2A2D32;
+@media screen and (min-width: 1280px) {
+  .projects-container {
+    max-width: 1008px;
+  }
 }
 
-header {
-  background-color: #2A2D32;
-  color: #F0F0F0;
-  padding: 1rem;
+.projects-title {
+  color: var(--black);
   text-align: center;
+  font-family: "Impact";
+  font-weight: 400;
+  font-size: 3.25rem;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
-
-header h1 {
-  margin: 0;
-  font-family: var(--second-family);
-font-weight: 400;
-font-size: 108px;
-line-height: 115%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #F0F0F0;
+.title-span {
+  color: var(--accet-green);
 }
-.header-span {
-  color: #14C57C;
+@media screen and (min-width: 768px) {
+  .projects-title {
+    font-size: 6.75rem;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
 }
-
-main {
-  padding: 2rem;
-  background-color: #2A2D32;
+@media screen and (min-width: 1280px) {
+  .projects-title {
+    margin-bottom: 80px;
+  }
 }
 
 .project-list {
-  list-style: none;
-  padding: 0;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  width: 100%;
-  
-}
-
-.project-list li {
-  background-color: #2A2D32;
-  border: none;
-  margin-bottom: 1rem;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
- 
-  align-items: flex-start;
-   text-align: left; 
-   width: 80%;
-   position: relative;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
 }
-
+.project-list li {
+  width: 100%;
+}
 .project-list img {
   width: 100%;
   height: auto;
-  border-radius: 24px; 
-}
+  border-radius: 16px;
 
-.project-list h3 {
-  margin: 0.5rem 0;
-  text-align: left;
-  font-family: var(--font-family);
-font-weight: 500;
-font-size: 36px;
-line-height: 133%;
-letter-spacing: 0.01em;
-text-transform: uppercase;
-color: #F0F0F0;
+  margin-bottom: 12px;
 }
-
+.project-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .project-list p {
-  margin: 0.5rem 0;
-  text-align: left;
-  font-family: var(--font-family);
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.03em;
-color: #F0F0F0;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
-.project-list .button { 
-  display: inline-flex; 
-  align-items: center; 
+.projects-title-visit-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 16px;
+}
+.project-list h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.project-list .visit-btn {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem; 
-  background-color: #2A2D32;
-  color: #F0F0F0;
-  text-decoration: none; 
-  border-radius: 5px; 
-  font-size: 1rem; 
+  background-color: var(--light-grey);
+  color: var(--black);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   gap: 12px;
-  align-self: flex-end;
-  right: 1rem; 
-  width: 125px;
-  height: 48px;
-  box-shadow: 0px 4px 4px 0px #000000;
-  
+  padding: 12px 24px;
+  max-width: 125px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list .visit-btn:hover, .project-list .visit-btn:focus {
+  background-color: var(--hover-grey);
+}
+@media screen and (min-width: 768px) {
+  .project-list {
+    gap: 60px;
+  }
+  .project-list img {
+    border-radius: 24px;
+    margin-bottom: 16px;
+  }
+  .project-info-box {
+    gap: 20px;
+  }
+  .projects-title-visit-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .project-list h3 {
+    display: inline-flex;
+    font-size: 2.25rem;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+  .project-list .visit-btn {
+    display: inline-flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .project-list {
+    gap: 80px;
+  }
 }
 
 
 
-.project-list a:hover {
-  background-color: #3B3F45;
-  
+.load-more {
+  display: block;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  border: none;
+  position: relative;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: transparent;
+  margin: 40px auto 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.load-more { 
-  display: block; 
-  margin: 2rem auto; 
-  padding: 0.75rem 1.5rem; 
-  font-size: 1.5rem; 
-  cursor: pointer; 
-  background-color: #2A2D32;
-  border: none; 
-  position: relative; 
-  font-family: var(--font-family);
-font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #F0F0F0;
-
+.load-more::after {
+  content: '';
+  width: 107px;
+  height: 2px;
+  background-color: var(--accet-green);
+  position: absolute;
+  bottom: 12px;
+  left: 15%;
 }
-
-.load-more::after { 
-  content: ''; 
-  display: block; 
-  width: 80%; 
-  height: 2px; 
-  background-color: #14C57C;
-  position: absolute; 
-  bottom: 0; 
-  left: 10%; 
-  text-align: center;
+.load-more:hover, .load-more:focus {
+  color: var(--accet-green);
 }
-
-.load-more:hover {
-  color: #14C57C;
+@media screen and (min-width: 768px) {
+  .load-more {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin: 60px auto 0;
+  }
+  .load-more::after {
+    width: 116px;
+  }
 }
-
-@media (min-width: 360px) { 
-  .project-list li { 
-    width: 90%; /* Зміна ширини елементів списку для мобільних пристроїв */ 
-  } } 
-  @media (min-width: 768px) { 
-    .project-list li { 
-      width: 70%; /* Зміна ширини елементів списку для планшетів */ 
-    } } 
-    @media (min-width: 1280px) { 
-      .project-list li { 
-        width: 50%; /* Зміна ширини елементів списку для десктопів */ 
-      } }
+@media screen and (min-width: 1280px) {
+  .load-more {
+    margin: 80px auto 0;
+  }
+}
