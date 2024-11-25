@@ -34,7 +34,7 @@
   border-radius: 8px;
   margin-bottom: 16px;
   fill: none;
-  stroke: var(--green-text-color);
+  stroke: var(--accet-green);
 }
 
 .benefit-list-topic {
