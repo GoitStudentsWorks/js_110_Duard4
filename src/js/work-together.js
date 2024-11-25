@@ -3,6 +3,7 @@ import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import icons from '/img/icons.svg';
 
 const emailInput = document.querySelector('#contact-email');
 const form = document.querySelector('.work-together-form');
@@ -62,7 +63,7 @@ const modal = basicLightbox.create(
       <div class="form-modal">
         <div class="form-modal-icon-close-wrapper">
           <svg class="form-modal-icon-close" style="stroke: var(--black);">
-            <use href="../img/icons.svg#icon-diagonal-arrow" width="24" height="24"></use>
+            <use href="${icons}#icon-close" width="24" height="24"></use>
           </svg>
         </div>
         <div class="form-modal-text-container">
