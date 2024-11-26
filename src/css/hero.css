@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url(../img/hero-decor-1.png), url(../img/hero-decor-2.png);
+  background-image: url(/img/hero-decor-1.png), url(../img/hero-decor-2.png);
   background-repeat: no-repeat;
   background-size: 351px 264px, 170px 130px;
   background-position: right 10px, left 150px top 350px;
@@ -38,6 +38,8 @@
   min-width: 28px;
   opacity: 1;
   transition: opacity 0.8s ease;
+  fill: none;
+  stroke: var(--accet-green);
 }
 
 .hero-link {
@@ -66,7 +68,8 @@
   pointer-events: none;
 }
 
-.order-link:hover .hero-link{
+
+.order-link:hover .hero-link {
   color: var(--white);
 }
 .order-link:hover .hero-link::after {
@@ -109,7 +112,7 @@
   padding-bottom: 32px;
 }
 
-.soc-a:hover{
+.soc-a:hover {
   color: var(--accet-green);
 }
 
@@ -124,7 +127,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(../img/hero-decor-1.png), url(../img/hero-decor-2.png);
+    background-image: url(/img/hero-decor-1.png), url(/img/hero-decor-2.png);
     background-repeat: no-repeat;
     background-size: 356px 276px;
     background-position: top 40px left 415px, top 500px left 145px;
@@ -142,14 +145,12 @@
     min-width: 704px;
   }
 
-  
-
   .hero-link {
     font-size: 1.25rem;
     line-height: 1.6;
   }
 
-  .hero-link::after{
+  .hero-link::after {
     width: 261px;
   }
 
@@ -179,7 +180,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero-section {
-    background-image: url(../img/hero-decor-1.png), url(../img/hero-decor-2.png);
+    background-image: url(/img/hero-decor-1.png), url(/img/hero-decor-2.png);
     background-repeat: no-repeat;
     background-size: 356px 276px;
     background-position: top 60px right 50px, top 520px right 680px;
@@ -189,6 +190,7 @@
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 32px;
   }
 
   .hero-title {
@@ -222,3 +224,4 @@
     width: 592px;
   }
 }
+
