@@ -131,6 +131,16 @@ input:checked + .move-span::after {
   transform: translateX(18px);
 }
 
+.menu-icon{
+  fill: var(--black);
+  stroke: var(--black);
+}
+
+body.dark .menu-icon{
+  fill: var(--white);
+  stroke: var(--white);
+}
+
 @media screen and (min-width: 768px) {
   .header .container {
     max-width: 768px;
