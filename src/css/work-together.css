@@ -1,3 +1,9 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+
+
 .form-modal-wrapper {
   min-width: 280px;
   max-width: 320px;

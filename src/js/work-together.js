@@ -32,8 +32,7 @@ async function pushRequest(data) {
       // Server responded with a status outside the 2xx range
       iziToast.error({
         title: 'Server Error',
-        message:
-          error.response.data.message || 'Something went wrong on the server.',
+        message: error.response.data.message || 'Something went wrong on the server.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -41,8 +40,7 @@ async function pushRequest(data) {
       // Request was made but no response was received
       iziToast.error({
         title: 'Network Error',
-        message:
-          'Unable to connect to the server. Please check your internet connection.',
+        message: 'Unable to connect to the server. Please check your internet connection.',
         position: 'topRight',
         timeout: 5000,
       });
@@ -72,9 +70,15 @@ const modal = basicLightbox.create(
         </div>
       </div>
     </div>
-`,
-  { closable: false }
-);
+`, {
+    closable: true,
+    onShow: (modal) => {
+      document.body.classList.add('no-scroll');
+    },
+    onClose: (modal) => {
+      document.body.classList.remove('no-scroll');
+    },
+  });
 
 emailInput.addEventListener('input', () => {
   if (!emailRegex.test(emailInput.value)) {
@@ -103,26 +107,15 @@ form.addEventListener('submit', e => {
   }
 });
 
-modal
-  .element()
-  .querySelector('.form-modal-icon-close')
-  .addEventListener('click', e => {
-    e.preventDefault();
+modal.element().querySelector('.form-modal-icon-close').addEventListener('click', e => {
+  e.preventDefault();
 
-    modal.close();
-  });
-
-modal
-  .element()
-  .addEventListener('click', e => {
-    const modalContent = modal.element().querySelector('.form-modal');
-    if (!modalContent.contains(e.target)) {
-      modal.close();
-    }
-  });
+  modal.close();
+});
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && modal.visible()) {
-    modal.close(); 
+    modal.close();
   }
+  modal.close();
 });
