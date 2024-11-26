@@ -1,7 +1,6 @@
 .hero-section {
   position: relative;
-z-index: 1;
-
+  z-index: 1;
 }
 .hero-section::before {
   content: '';
@@ -130,6 +129,9 @@ z-index: 1;
     background-position: top 40px left 415px, top 500px left 145px;
   }
 
+  .hero-section::before {
+    display: none;
+  }
   .order-link:hover .hero-link {
     color: var(--white);
   }
