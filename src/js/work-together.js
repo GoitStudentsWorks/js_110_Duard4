@@ -111,3 +111,18 @@ modal
 
     modal.close();
   });
+
+modal
+  .element()
+  .addEventListener('click', e => {
+    const modalContent = modal.element().querySelector('.form-modal');
+    if (!modalContent.contains(e.target)) {
+      modal.close();
+    }
+  });
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && modal.visible()) {
+    modal.close(); 
+  }
+});

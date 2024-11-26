@@ -2,8 +2,14 @@
 .container {
   max-width: 360px;
   margin: 0 auto;
-  padding: 0 20px;
+  width: 92%;
   position: relative;
+}
+@media (min-width: 360px) {
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {

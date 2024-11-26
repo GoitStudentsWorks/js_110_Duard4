@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${project.title}</h3>
             <a href="${project.link}" target="_blank" class="visit-btn">
               VISIT
-              <svg width="24" height="24">
+              <svg width="24" height="24" class="diagonal-arrow-icon">
                 <use href="${icons}#icon-diagonal-arrow"></use>
               </svg>
             </a>

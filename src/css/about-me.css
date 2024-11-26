@@ -49,10 +49,6 @@
   padding-bottom: 40px;
 }
 
-.text-green {
-  color: var(--accet-green);
-}
-
 .text-one {
   margin-bottom: 24px;
 }
@@ -64,7 +60,7 @@
 .about-subtitle {
   font-weight: 500;
   font-size: 2rem;
-  line-height: 125%;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -98,7 +94,9 @@
     height: 680px;
     margin: 0 0 140px 32px;
   }
-
+  .about-subtitle {
+    font-size: 2.25rem;
+  }
   .img-about-me {
     max-width: 336px;
     height: auto;

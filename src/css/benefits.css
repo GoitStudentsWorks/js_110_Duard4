@@ -12,10 +12,6 @@
   color: var(--text-color);
 }
 
-.benefit-title .benefit-highlight {
-  color: var(--accet-green);
-}
-
 .benefit-list-item {
   display: flex;
   flex-direction: column;
