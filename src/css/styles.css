@@ -41,3 +41,7 @@ main {
 .highlight-green {
   color: var(--accet-green);
 }
+
+body:not(.dark) .highlight-green {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Black shadow */
+}
