@@ -56,6 +56,7 @@ main {
 @font-face {
   font-family: 'Impact';
   src: url('../fonts/impact.ttf') format('truetype');
+  font-display: swap;
 }
 
 .visually-hidden {
