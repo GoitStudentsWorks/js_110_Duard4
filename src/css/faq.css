@@ -43,7 +43,7 @@
 }
 
 .faq-btn-close {
-  transition: transform 0.4s ease, margin-left 0.4s ease;
+  transition: transform var(--animation), margin-left var(--animation);
 }
 
 .ac-trigger.is-active .faq-btn-close {
@@ -65,7 +65,7 @@
   font-family: 'Poppins', sans-serif;
   opacity: 0;
   margin-top: 24px;
-  transition: opacity 0.4s ease 0.1s;
+  transition: opacity var(--animation);
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5;

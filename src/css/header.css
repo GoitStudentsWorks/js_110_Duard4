@@ -52,7 +52,7 @@ html {
   width: 32px;
   fill: transparent;
   stroke: var(--black);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--animation);
 }
 
 .modal-svg {
@@ -60,7 +60,7 @@ html {
   height: 32px;
   width: 32px;
   fill: var(--black);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--animation);
 }
 
 .nav-list {
@@ -85,8 +85,8 @@ html {
   border-radius: 16px;
   width: 48px;
   height: 24px;
-  background-color: #e4e5e6;
-  transition: 0.3s;
+  background-color: var(--light-grey);
+  transition: var(--animation);
   cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ html {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: var(--animation);
 }
 .move-span::after {
   position: absolute;
@@ -109,7 +109,7 @@ html {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: var(--animation);
 }
 
 input:checked + .move-span {
@@ -157,9 +157,7 @@ input:checked + .move-span::after {
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--black);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--animation);
   }
 
   .nav-link:hover {
