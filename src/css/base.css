@@ -44,10 +44,6 @@ body {
   color: var(--black);
   background-color: var(--white);
 }
-/* Милиці: */
-/*body {*/
-/*  overflow-x: hidden;*/
-/*}*/
 
 main {
   flex-grow: 1;
@@ -66,7 +62,7 @@ main {
   margin: -1px;
   border: 0;
   padding: 0;
-
+  overflow: hidden;
   white-space: nowrap;
   clip-path: inset(100%);
 }
