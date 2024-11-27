@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     currentIndex += projectsPerPage;
-    if (firstProjectItem) {
+    if (firstProjectItem && currentIndex !== projectsPerPage) {
       firstProjectItem.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
