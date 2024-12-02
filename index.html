@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/js_110_Duard4/assets/favicon-BlAaxjT_.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore the portfolio of a skilled full-stack developer, specializing in JavaScript, front-end and back-end development, as well as modern web technologies. Discover a range of projects demonstrating proficiency in creating dynamic, user-focused websites and applications.">
+  <title>Portfolio</title>
+  <script type="module" crossorigin src="/js_110_Duard4/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/js_110_Duard4/assets/vendor-Bt0M7z7H.js">
+  <link rel="stylesheet" crossorigin href="/js_110_Duard4/assets/vendor-DmpqLf7P.css">
+  <link rel="stylesheet" crossorigin href="/js_110_Duard4/assets/index-BuczsnlI.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <a href="./index.html" class="header-logo">
+      lloyd<span class="highlight-green">jefferson.</span>
+    </a>
+    <div class="nav-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch" class="visually-hidden" />
+        <span class="move-span" aria-hidden="true"></span>
+        <span class="visually-hidden">Enable dark mode</span>
+      </label>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#work-together">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-toggle">
+      <input type="checkbox" id="modal-check" class="modal-check">
+      <label for="modal-check" class="menu-icon">
+        <svg class="modal-svg" tabindex="0" width="32" height="32">
+          <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-material-symbols-light_menu"></use>
+        </svg>
+
+        <svg class="modal-close" tabindex="0">
+          <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-close"></use>
+        </svg>
+      </label>
+    </div>
+  </div>
+</header>
+  <div class="menu_modal" id="menuModal">
+  <div class="container">
+    <a href="./index.html" class="header-logo">
+      lloyd<span class="highlight-green">jefferson.</span>
+    </a>
+    <svg class="icon" id="closeModal">
+      <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-close"></use>
+    </svg>
+  </div>
+  <div class="menu_option">
+    <ul class="option">
+      <li class="li-order">
+        <a href="#about-me" class="order">About me</a>
+      </li>
+      <li class="li-order">
+        <a href="#projects" class="order">Projects</a>
+      </li>
+      <li class="li-order">
+        <a href="#work-together" class="order">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <main>
+    <section class="hero-section" id="hero">
+  <div class="container hero-container hero-green-dots">
+    <div class="title-img">
+      <h1 class="hero-title initShow autoShow" style="--i: 1s">
+        Hello, I am <span class="highlight-green">Fullstack developer</span>
+      </h1>
+      <picture>
+        <source srcset="/js_110_Duard4/assets/hero-3GYtg5GX.jpg 1x, /js_110_Duard4/assets/hero@2x-KvewgRes.jpg 2x">
+        <img src="/js_110_Duard4/assets/hero-3GYtg5GX.jpg" alt="developer" class="hero-img initShow" width="592" height="444" loading="lazy" style="--i: 1.5s">
+      </picture>
+    </div>
+    <div class="text-link">
+      <div class="order-link initShow autoShow" style="--i: 2s">
+        <svg class="arrow" width="28" height="28">
+          <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-arrow-long"></use>
+        </svg>
+        <a href="#work-together" class="hero-link">Order the projects</a>
+      </div>
+
+      <p class="hero-sub initShow autoShow" style="--i: 2.5s">
+        I work with people all over the world to create
+        <span class="hero-span">impressive</span> and
+        <span class="hero-span">functional websites</span> that reflect each
+        client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <div class="soc-links initShow autoShow" style="--i: 3s">
+    <ul class="soc-list list">
+      <li class="soc-item">
+        <a href="https://www.instagram.com/goitclub/" target="_blank" class="soc-a">Instagram</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://www.facebook.com/goITclub/" target="_blank" class="soc-a">Facebook</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+          class="soc-a">Linkedin</a>
+      </li>
+      <li class="soc-item">
+        <a href="https://github.com/Duard4/goit-js-team-project" target="_blank" class="soc-a">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section id="about-me" class="container">
+  <h2 class="about-me-title autoShow">
+    ABOUT
+    <span class="highlight-green">ME</span>
+  </h2>
+  <div class="bio-container">
+    <picture class="bio-image autoShow">
+      <source
+        srcset="/js_110_Duard4/assets/desktop-D1VyzHua.jpg 1x, /js_110_Duard4/assets/desktop@2x-jc44gLhj.jpg 2x"
+        media="(min-width: 1280px)"
+      >
+      <source
+        srcset="/js_110_Duard4/assets/tablet-C77Ur-hH.jpg 1x, /js_110_Duard4/assets/tablet@2x-dYykJAWc.jpg 2x"
+        media="(min-width: 768px)"
+      >
+      <source
+        srcset="/js_110_Duard4/assets/mobile-B851Z4ZC.jpg 1x, /js_110_Duard4/assets/mobile@2x-jTCh67_L.jpg 2x"
+        media="(max-width: 767px)"
+      >
+      <img
+        src="/js_110_Duard4/assets/mobile-B851Z4ZC.jpg"
+        alt="Responsive image of Lloyd Jefferson"
+        class="img-about-me"
+        loading="lazy"
+      >
+    </picture>
+
+    <div class="bio-text-container">
+      <h3 class="about-subtitle autoShow">bio</h3>
+      <p class="about-me-discr text-one autoShow">
+        I'm Lloyd Jefferson, a talented programmer specializing in software
+        development. My expertise spans various programming languages and
+        technologies, and I am dedicated to continually enhancing my skills. I
+        thrive on seeking unconventional and creative solutions to problems,
+        leveraging a high level of analytical skills to effectively tackle even
+        the most challenging tasks.
+      </p>
+
+      <p class="about-me-discr text-two autoShow">
+        Adaptable to both independent and team-oriented work, I collaborate
+        seamlessly with colleagues, exchanging ideas and finding optimal
+        solutions. My professional maturity enables me to navigate challenges
+        and stressful situations with a calm demeanor, maintaining a
+        consistently high quality of work. Committed to self-improvement, I
+        actively engage in studying new technologies and practices to stay
+        current with the latest innovations in the field.
+      </p>
+    </div>
+  </div>
+  <div class="background-img"></div>
+  <div class="bio-list">
+    <div class="sec-edu">
+      <h3 class="about-subtitle autoShow">education</h3>
+      <ul class="about-me-list autoShow">
+        <li class="about-me-item">
+          2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+        </li>
+        <li class="about-me-item">
+          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+          New York
+        </li>
+        <li class="about-me-item">
+          2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+        </li>
+      </ul>
+    </div>
+
+    <div class="sec-role autoShow">
+      <h3 class="about-subtitle autoShow">role</h3>
+      <ul class="about-me-list autoShow">
+        <li class="about-me-item">Frontend development</li>
+        <li class="about-me-item">HeadlessCMS, Wordpress</li>
+        <li class="about-me-item">Blender (enjoy)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="tech-skills-section" id="tech-skills">
+    <h2 class="visually-hidden">Tech skills</h2>
+    <div class="marquee">
+        <ul class="marquee__content tech-skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node. js</li>
+            <li>React Native</li>
+            <li>TypeScript</li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content tech-skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node. js</li>
+            <li>React Native</li>
+            <li>TypeScript</li>
+        </ul>
+    </div>
+    <div class="marquee rotated">
+        <ul class="marquee__content tech-skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node. js</li>
+            <li>React Native</li>
+            <li>TypeScript</li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content tech-skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node. js</li>
+            <li>React Native</li>
+            <li>TypeScript</li>
+        </ul>
+    </div>
+</section>
+    <section id="projects">
+  <div class="container projects-container">
+    <h2 class="projects-title autoShow">My <span class="highlight-green">Projects</span></h2>
+    <ul class="project-list"></ul>
+    <button class="load-more autoShow" type="button">Load more</button>
+  </div>
+</section>
+    <section id="benefits" class="benefits">
+    <div class="benefits-background"></div>
+    <div class="container">
+      <h2 class="benefit-title autoShow">
+        <span class="highlight-green">BENEFITS</span> OF WORKING WITH ME
+      </h2>
+      <ul class="benefit-list">
+        <li class="benefit-list-item autoShow">
+          <div class="benefit-icon">
+            <svg width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h3 class="benefit-list-topic">EXPERTISE</h3>
+          <p class="benefit-list-text">
+            With extensive experience in development, I have a deep understanding
+            of programming and website development.
+          </p>
+        </li>
+        <li class="benefit-list-item autoShow">
+          <div class="benefit-icon">
+            <svg width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-message-chat-circle"></use>
+            </svg>
+          </div>
+          <h3 class="benefit-list-topic">COMMUNICATION</h3>
+          <p class="benefit-list-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </li>
+        <li class="benefit-list-item autoShow">
+          <div class="benefit-icon">
+            <svg width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefit-list-topic">ART</h3>
+          <p class="benefit-list-text">
+            Thanks to my creative nature, I am ready to accept challenges and help
+            you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefit-list-item autoShow">
+          <div class="benefit-icon">
+            <svg width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <h3 class="benefit-list-topic">URGENT EXECUTION</h3>
+          <p class="benefit-list-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+    <section id="faq" class="faq-section">
+  <div class="container green-decor">
+    <h2 class="faq-title autoShow">
+      Frequently asked <span class="highlight-green">question</span>
+    </h2>
+    <ul class="faq-list accordion-container">
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+          <button class="faq-btn ac-trigger">
+            What programming languages are most often used in your project?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+          <button class="faq-btn ac-trigger">
+            What are the deadlines for the project?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            nnmber of factors, such as the scope of the project, its complexity,
+            and the availability of resourced. Determining exact deadlines is a
+            difficlt task, and it usualy occurs during the planning phase of the
+            project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+          <button class="ac-trigger faq-btn" data-accordion-btn>
+            What payment methods do you accept?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            Payment throuh credit and debit cards sush as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+          <button class="faq-btn ac-trigger" data-accordion-btn>
+            How can I contact you?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+          <button class="faq-btn ac-trigger" data-accordion-btn>
+            Do you provide advice or support?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            nnmber of factors, such as the scope of the project, its complexity,
+            and the availability of resourced. Determining exact deadlines is a
+            difficlt task, and it usualy occurs during the planning phase of the
+            project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item autoShow">
+        <h3 class="ac-header faq-header">
+
+          <button class="faq-btn ac-trigger" data-accordion-btn>
+            What does the process of developing a software product look like from
+            idea to implementation?
+            <svg class="faq-btn-close" width="24" height="24">
+              <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p>
+            Payment throuh credit and debit cards sush as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="reviews-title autoShow">reviews</h2>
+    <div class="swiper autoShow">
+      <ul class="reviews-list swiper-wrapper"></ul>
+
+      <div class="button-arrows">
+        <button type="button" class="swiper-button-prev" aria-label="Previous slide">
+          <svg class="icon-arrow-narrow-left arrow-left" width="24" height="24">
+            <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-button-next" aria-label="Next slide">
+          <svg class="icon-arrow-narrow-right arrow-right" width="24" height="24">
+            <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="work-together-sec" id="work-together">
+  <div class="container work-together-container green-dots">
+    <div class="contact-box">
+
+      <h2 class="work-together-title autoShow">
+        <span class="one-line">
+          <span>let’s</span>
+          <span class="highlight-green">work</span></span>
+        <span class="highlight-green">together</span>
+      </h2>
+
+      <p class="autoShow">Contact me to transform your ideas into exceptional solutions.</p>
+      <address>
+        <ul class="address-list autoShow">
+          <li class="address-list-item">
+            <a href="tel:+380904567890">
+              <svg class="address-icon">
+                <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-phone" width="24" height="24"></use>
+              </svg>
+              <span class="address-text">+38 090 456 78 90</span></a>
+          </li>
+          <li class="address-list-item">
+            <a href="mailto:lloydjefferson@gmail.com">
+              <svg class="address-icon">
+                <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-mail" width="24" height="24"></use>
+              </svg>
+              <span class="address-text">lloydjefferson@gmail.com</span></a>
+          </li>
+          <li class="address-list-item">
+            <a href="https://www.google.com/maps?q=New+York" target="_blank" rel="noopener noreferrer">
+              <svg class="address-icon">
+                <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-location" width="24" height="24"></use>
+              </svg>
+              <span class="address-text">USA, New York</span></a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <!--    using novalidate to prevent defaultInputCheckingMessage -->
+    <form class="work-together-form" novalidate>
+      <input class="form-input-base form-email autoShow" type="email" name="contact-email" id="contact-email"
+        placeholder="Your email*" required >
+      <svg class="form-email-tick visually-hidden">
+        <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-success" width="16" height="16"></use>
+      </svg>
+      <p class="form-email-error-message visually-hidden">Invalid email, try again</p>
+      <textarea class="form-input-base form-message autoShow" name="contact-message" id="contact-message"
+        placeholder="Message"></textarea>
+      <button type="submit" class="contact-submit-btn autoShow">Send message</button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container container autoShow">
+        <div class="footer-logo-social">
+            <a href="./index.html" class="footer-logo ">lloyd<span class="highlight-green">jefferson.</span></a>
+
+            <ul class="footer-socials">
+                <li>
+                    <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/goITclub" target="_blank" rel="noopener noreferrer">
+                        Linkendin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Duard4/goit-js-team-project" target="_blank" rel="noopener noreferrer">
+                        Github
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="copyright">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+</footer>
+  
+  <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+    <svg class="scroll-to-top-icon" width="24" height="24">
+      <use href="/js_110_Duard4/assets/icons-CYWdJ-lh.svg#icon-icon-vector-down"></use>
+    </svg>
+  </button>
+
+
+</body>
+
+</html>
